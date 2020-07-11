@@ -23,6 +23,6 @@ class UsersController < ApplicationController
     end
 
     def authentication
-      redirect_to root_path if !session.include? :name
+      redirect_to root_path if !session.include? :user_id
     end
 end
