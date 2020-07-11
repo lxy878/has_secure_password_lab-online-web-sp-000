@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
   def create
   end
-  def logout
+  def destory
   end
 
 end
