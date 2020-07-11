@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   post 'destory', to:'session#destroy'
 
-  resources :users, only: %i[show new create]
+  get '/users/show'
+  get '/users/new'
+  post '/users/create'
 
 end
