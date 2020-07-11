@@ -1,12 +1,5 @@
 <h1>Log In</h1>
 <%= form_tag login_path do%>
-  <% if f.errors.any? %>
-    <ul>
-      <% f.errors.full_messages.each do |message|%>
-        <li><%= message%></li>
-      <% end %>
-    </ul>
-  <% end %>
   <p>Name: <%= f.text_field :name%></p>
   <p>Password: <%= f.password_field :password%></p>
   <p>Password Comfirmation: <%= f.password_field :password_confirmation%></p>
