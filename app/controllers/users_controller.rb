@@ -8,7 +8,6 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to '/'
     else
-
       render :new
     end
   end
