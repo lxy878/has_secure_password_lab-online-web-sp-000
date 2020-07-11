@@ -8,7 +8,6 @@ class SessionsController < ApplicationController
       redirect_to root_path
     else
       session[:user_id]=user.id
-      binding.pry
       redirect_to users_show_path
     end
   end
