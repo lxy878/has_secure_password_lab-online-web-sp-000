@@ -13,8 +13,9 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user = User.find_by(name: current_user)
   end
-  
+
   private
     def user_params
       params.require(:user).permit(:name, :password, :password_confirmation)
