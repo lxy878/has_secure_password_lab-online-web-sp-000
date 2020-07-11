@@ -2,6 +2,6 @@
 <%= form_tag login_path do%>
   <p>Name: <%= text_field_tag :name%></p>
   <p>Password: <%= password_field_tag :password%></p>
-  <p>Password Comfirmation: <%= f.password_field :password_confirmation%></p>
+  <p>Password Comfirmation: <%= password_field_tag :password_confirmation%></p>
   <%= f.submit :'create'%>
 <% end %>
