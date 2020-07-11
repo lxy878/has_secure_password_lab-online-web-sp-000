@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   get '/users/show'
   get '/users/new', to: 'users#new'
-  post '/users/create'
+  post '/users/new'
 
 end
