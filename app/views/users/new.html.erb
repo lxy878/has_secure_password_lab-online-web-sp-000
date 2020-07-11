@@ -2,6 +2,7 @@
 <%= form_for @user do |f|%>
   <% if @user.errors.any? %>
     <% @user.errors.full_messages.each do |message|%>
+    <%end%>
   <% end %>
   <p>Name: <%= f.text_field :name%></p>
   <p>Password: <%= f.password_field :password%></p>
