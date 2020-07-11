@@ -1,6 +1,6 @@
 <h1>Log In</h1>
 <%= form_tag login_path do%>
-  <p>Name: <%= f.text_field :name%></p>
+  <p>Name: <%= text_field_tag :name%></p>
   <p>Password: <%= f.password_field :password%></p>
   <p>Password Comfirmation: <%= f.password_field :password_confirmation%></p>
   <%= f.submit :'create'%>
