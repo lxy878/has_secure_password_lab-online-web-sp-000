@@ -6,7 +6,5 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create]
   get '/users/show'
-  get '/users/new', to: 'users#new'
-  post '/users/new'
 
 end
