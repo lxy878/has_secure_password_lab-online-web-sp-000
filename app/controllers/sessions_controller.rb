@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     user = User.find_by(name: params[:name])
     redirect_to root if !@user.authenticate(params[:password])
     session[:name]=user.name
+    
   end
 
   def destroy
