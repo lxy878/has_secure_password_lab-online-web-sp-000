@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session.destroy
-    redirect_to '/'
+    redirect_to root
   end
 
 end
