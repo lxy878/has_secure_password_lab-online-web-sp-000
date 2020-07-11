@@ -1,5 +1,5 @@
 <h1>Log In</h1>
-<%= form_tag :user do |f|%>
+<%= form_tag login_path do%>
   <% if f.errors.any? %>
     <ul>
       <% f.errors.full_messages.each do |message|%>
