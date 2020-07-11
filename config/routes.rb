@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   post 'destory', to:'session#destroy'
 
   get '/users/show'
-  
+  get '/users/new'
 end
