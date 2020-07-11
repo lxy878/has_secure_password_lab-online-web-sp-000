@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   post 'destory', to:'session#destroy'
 
+  resources :users, only: [:new, :create]
   get '/users/show'
   get '/users/new', to: 'users#new'
   post '/users/new'
