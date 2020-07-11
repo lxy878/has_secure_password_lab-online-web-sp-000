@@ -7,8 +7,8 @@
       <% end %>
     </ul>
   <% end %>
-  <p><%= f.text_field :name%></p>
-  <p><%= f.password_field :password%></p>
-  <p><%= f.password_field :password_confirmation%></p>
+  <p>Name: <%= f.text_field :name%></p>
+  <p>Password: <%= f.password_field :password%></p>
+  <p>Password Comfirmation: <%= f.password_field :password_confirmation%></p>
   <%= f.submit :'create'%>
 <% end %>
