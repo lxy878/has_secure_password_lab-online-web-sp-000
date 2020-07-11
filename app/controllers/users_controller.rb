@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def new
+    raise params.inspect
     @user = User.new
   end
 
