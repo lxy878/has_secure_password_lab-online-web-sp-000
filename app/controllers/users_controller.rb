@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authentication
+  before_action :authentication, only: [:show]
   def new
     @user = User.new
   end
