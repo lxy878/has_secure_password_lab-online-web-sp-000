@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   helper_method :user_login
 
   private
-    def user_login
-
+    def current_user
+      session[:name]=
     end
 end
