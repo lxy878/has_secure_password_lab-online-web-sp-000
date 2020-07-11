@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root '/', to: 'sessions#new'
   post '/login', to: 'sessions#create'
 
-  get 'users/'
+  get 'users/new'
 end
