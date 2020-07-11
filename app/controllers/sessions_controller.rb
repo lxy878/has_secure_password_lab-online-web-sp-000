@@ -5,9 +5,12 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(name: params[:user][:name])
     binding.pry
-    redirect_to root_path if !user.authenticate(params[:password])
-    session[:user_id]=user.id
-    redirect_to users_show_path
+    if !user.authenticate(params[:password])
+      redirect_to root_path
+    else
+      session[:user_id]=user.id
+      redirect_to users_show_path
+    end
   end
 
   def destroy
