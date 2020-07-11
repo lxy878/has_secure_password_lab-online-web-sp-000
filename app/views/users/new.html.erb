@@ -1,7 +1,10 @@
 <h1>New User Form</h1>
 <%= form_for @user do |f|%>
   <% if f.errors.any? %>
-    <% f.errors.full_messages.each do |message|%>
-    <% end %>
+    <ul>
+      <% f.errors.full_messages.each do |message|%>
+        <li><%= message%></li>
+      <% end %>
+    </ul>
   <% end %>
 <% end %>
