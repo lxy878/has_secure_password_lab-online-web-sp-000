@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(name: current_user)
+    @user = current_user
   end
 
   private
