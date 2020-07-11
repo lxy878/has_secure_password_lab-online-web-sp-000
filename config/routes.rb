@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root 'sessions#new'
   post '/login', to: 'sessions#create'
   post 'destory', to:'session#destroy'
+
+  
 end
