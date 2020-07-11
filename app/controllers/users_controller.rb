@@ -22,7 +22,7 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :password, :password_confirmation)
     end
 
-    def authenticate
+    def authentication
       redirect_to root_path if !session.include? :name
     end
 end
